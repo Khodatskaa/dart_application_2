@@ -3,7 +3,7 @@ bool isEven(int number) {
 }
 
 void main() {
-  int num = 55;
+  int num = 53;
   if (isEven(num)) {
     print("$num is even");
   } else {
