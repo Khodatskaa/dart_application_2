@@ -1,12 +1,13 @@
-bool isEven(int number) {
-  return number % 2 == 0;
+int calculateFactorial(int n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return n * calculateFactorial(n - 1);
+  }
 }
 
 void main() {
-  int num = 53;
-  if (isEven(num)) {
-    print("$num is even");
-  } else {
-    print("$num is odd");
-  }
+  int number = 5;
+  int factorial = calculateFactorial(number);
+  print("$number! = $factorial");
 }
